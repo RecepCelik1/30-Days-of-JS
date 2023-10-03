@@ -36,5 +36,12 @@ I hope you are enjoying too."
 
 /* Stringlerdeki kaçış dizileri
 
+Javascript ve diğer programlama dillerinde \ (ters eğik çizgi) ardından bazı karakterler kaçış dizisidir. En yaygınları : 
+
+* \n : yeni satır
+* \t : Tab, 8 boşluk
+* \\ : ters eğik çizgi
+* \' : tek tırnak
+* \" : çift tırnak
 
 */
