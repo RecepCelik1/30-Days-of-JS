@@ -65,4 +65,11 @@ console.log(personInfo);
 
 /* Bir string şablonu veya interpolasyon (matematiksel bir terim) yöntemi kullanarak, bir değer olabilecek ifadeler veya bazı işlemler 
 ekleyebiliriz. (karşılaştırma, aritmetik işlemler, üçlü işlem ...)
+
+örneğin:
 */
+
+let num2 = 5, num3 = 9;
+let exp = `${num2} is grater than ${num3}: ${a > b}`; // false değerini döndürecektir.
+console.log(exp);
+
