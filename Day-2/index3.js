@@ -35,6 +35,6 @@ console.log(typeof(firstName)); // bu şekilde zate bildiğimiz bişey.
 
 // string to float: yukarıdakinin aynısı tek farkı parseFloat dememiz.
 
-// float to in: parseInt() kullanılır yine 
+// float to in: parseInt() kullanılır yine fakat unutma aşağıya yuvarlicaktır sayıyı.
 
 
