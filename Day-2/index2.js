@@ -102,3 +102,104 @@ console.log(string[lastIndex]); // daha sonra da o değişkeni parametre numaras
 string = `Javascript`;
 console.log(string.toUpperCase()); // bununda syntaxı bu şekildedir.
 console.log(string.toLowerCase()); // aradan lower case ide çıkaralım :))
+
+// 5-) substr(): bunun içerisine iki tane argüman gireriz biri kaçıncı indexten itibaren stringi bölüceğini, diğeri o ayrımdan sonraki  
+// kaç karakteri alıcağını belirler.
+
+string = `JavaScript`;
+console.log(string.substr(4,6)); //4. index olan S harfinden itibaren 6 harfi bastıracaktır.
+
+// 6-) substring(): bu da yukarıdaki lavukla aynı işlevi görüyor ama tek farkı aldığı iki argümanın ilki başlangıç indexi ikincisi 
+// ise hangi karakterde durucağı ile ilgili index fakat son indexi dahil etmez.
+
+string= `JavaScript`;
+console.log(string.substring(0,4)); //Java çıktısını verecektir.
+
+// 7-) split(): Bu metot bir stringi belirtilen yerden bölmeye yarar. (array oluşturuyor).
+
+string = `30 Days Of JavaScript`;
+console.log(string.split()); //bu kısımda bir şey belirtmediğimiz için 1 elementli bir array oluştu. -> ["30 Days Of JavaScript"]
+console.log(string.split(' ')); // bu kısımda boşluktan böl dediğimiz için 4 elementli bir array oluştu. -> 
+                                                                                                //["30", "Days", "Of", "JavaScript"];
+firstName = `Recep`;
+console.log(firstName.split('')); // Burada sadece tek tırnak kullandığımız için stringin içindeki tüm karakterleri array haline getirdi
+                                    // -> ["R", "e", "c" ,"e","p"];
+
+let countries = `Finland, Sweden, Norway, Denmark, and Iceland`;
+console.log(countries.split(','));// Buraya dikkat sadece virgül ile ayırıyor. Yani ne demek virgül karakterini gördüğün zaman sök al ve
+                                  // oraya kadar aldığın tüm karakterleri ayrı bir array olarak depola. fark edileceği üzere ikinci 
+                                  // karakterden itibaren en başta boşlukla ayırdı.
+// şu şekikde = ["Finland" , " Sweden" , " Norway" , " Denmark" , " and Iceland"]  !! Burası şokomelli
+
+console.log(countries.split(', ')); //fakat bu sefer direkt boşluksuz ayıracaktır.
+
+//8-) trim(): stringin başındaki ve sonundaki boşlukları silmeye yarar.
+
+string = `  30 Days Of JavaScript   `;
+console.log(string.trim(' ')); // tırnak işareti kullanmadan da vanilla olarak kullansak dahi boşlukları silecektir.
+
+//9-) includes(): bu metod string içerisinde belirli bir argümanı arar, bulursa true(1) bulamazsa false(2) değerini döndürür.
+// ama harfi harfine arama yapar.
+
+string = `30 Days Of JavaScript`; 
+console.log(string.includes('Days')); // true
+console.log(string.includes('days')); // false - birebir arama yapar!
+
+// 10-) replace(oldsubstring, newsubstring) bu metot string içerisinde değiştirme yapmanızı sağlar. Eski ve yeni olmak üzere iki 
+// argüman alır.
+
+console.log(string.replace('JavaScript','Python')); // 30 Days Of Python
+
+// 11-) charAt(): stringdeki indexi belirttiğinizde o indexin değerini yazdırır. Pek gerekli bir şey değil gibi.
+
+string = `30 Days Of JavaScript`;
+console.log(string.charAt(0)); //3 (0. indeksin değerini döndürdü.)
+
+// 12-) charCodeAt(): stringdeki vermiş olduğumuz indeksin ASCII değerini döndürür.
+
+console.log(string.charCodeAt(3)); //D harfinin ASCII karşılığı 68 olduğu için 68 değerini döndürecektir.
+
+// 13-) indexOf(): bu metot belirtilen değerin indeksini verir. Değer bulunamazsa -1 değerini dönrürür ve yine birebir arama yapar.
+
+string = `30 Days Of JavaScript`;
+console.log(string.indexOf('D')); // 3 değerini döndürecektir.
+
+// 14-) lastIndexOf(): Bu metot belirtilen değerin son indeksini verir. Değer bulunamazsa -1 sonucunu döndürür. (Birebir arama yapar).
+// yukarıdaki yapı bulduğu ilk anda dururken bu en sonuncusuna kadar arar.
+
+string = `30 Days Of JavaScript`;
+console.log(string.lastIndexOf('a'));  // a en son 14. indekste mevcuttur 14 değerini döndürür.
+
+
+// 15-) concat(): bu metot birleştirme işlemini sağlar, birden fazla değer alabilir.
+
+string = `30`;
+console.log(string.concat("Days", "Of", "JavaScript"));// 30DaysOfJavaScript
+
+// 16-) startsWith: stringin belirtilen argüman ile başlayıp başlamadığını kontrol eder. true ya da false değerini döndürür. Birebir 
+// arama yapar.
+
+string = `30 Days Of JavaScript`;
+console.log(string.startsWith(30));// true
+console.log(string.endsWith(`Script`)); //17-) Buda son kelime versiyonu true değerini döndürür.
+
+// 18-) search() argüman olarak bir alt dize alır ve ilk eşleşmenin dizinini döndürür. Arama değeri bir dize veya normal ifade kalıbı
+// olabilir.
+
+string = `I love JavaScript. If you do not love JavaScript what else can you love.`;
+console.log(string.search('love')); // argümanı ilk bulduğu gibi başlangıç index değerini döndürür.
+
+// 19-) match(): argüman olarak bir alt dize veya normal ifade kalubu alır ve eşleşme varsa bir dizi döndürür, değilse null döndürür.
+// Normal bir ifade kalıbının nasıl göründüğünü görelim. / işareti ile başlar ve / işareti ile biter.
+
+/* let string = 'love'
+   let patternOne = /love/ koşulsuz
+   let patternTwo = /love/gi    g-bütün metinde ara, i-büyük küçük harf duyarsız */
+
+//Match syntax
+
+string = `I love JavaScript. If you do not love JavaScript what else can you love.`;
+console.log(string.match('love'));
+
+let pattern = /love/gi;
+console.log(string.match(pattern));
