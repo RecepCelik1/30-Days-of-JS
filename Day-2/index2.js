@@ -203,3 +203,8 @@ console.log(string.match('love'));
 
 let pattern = /love/gi;
 console.log(string.match(pattern));
+
+//20-) repeat(): bağımsız değişken olarak bir sayı alır ve stringi sayı kadar döndürür.
+
+string = `love`;
+console.log(string.repeat(5));
