@@ -73,3 +73,32 @@ let num2 = 5, num3 = 9;
 let exp = `${num2} is grater than ${num3}: ${a > b}`; // false değerini döndürecektir.
 console.log(exp);
 
+//string metodları 
+
+/* JS içerisindeki her şey bir JS objesidir. ilkel string demek bir kere oluşturulduktan sonra onu değiştiremeyiz(türünü). String 
+nesnesi pek çok string metoduna sahiptir. Bunlar stringler ile çalışırken, onların özelliklerini bulurken bize çok yardımcı olurlar.
+*/
+
+//1-) length
+
+/* legth metodu çıktı olarak bir stringin içerdiği karakter sayısını verir. (space dahil)
+örnek 
+*/
+
+let js = `JavaScript`;
+console.log(js.length); //syntaxı bu şekildedir ve 10 değerini bastırıcaktır konsola.
+
+
+//2-) accessing each character in a string with using it's index. Js dilindede sayma 0 dan başlayarak yapılır.
+
+let string = `JavaScript`;
+console.log(string[0]); //Çıktı olarak J harfini verecektir. İstersek hangi string girilirse girilsin son harfini bulan bir algoritma ya
+                        // zabiliriz.
+let lastIndex = string.length - 1; // Bu şekilde karakter uzunluğundan 1 çıkararak son indexin numarasını bir değişkene atarız.
+console.log(string[lastIndex]); // daha sonra da o değişkeni parametre numarası olarak kullanarak yazdırabiliriz.
+
+// 3-) toUpperCase(): bununla bütün string parametrelerini teker teker büyük harfe çeviririz.
+
+string = `Javascript`;
+console.log(string.toUpperCase()); // bununda syntaxı bu şekildedir.
+console.log(string.toLowerCase()); // aradan lower case ide çıkaralım :))
