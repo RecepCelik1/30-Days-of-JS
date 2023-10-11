@@ -105,9 +105,65 @@ console.log(weight);
     * ! 
 */
 
-        /* Koşul Operatörü */
+        /* Koşul Operatörü (Ternary - Üçlü)*/
+
+/* Üçlü operatör bir koşul yazmaya izin verir. Koşullar yazmanın başka bir yolu üçlü operatörleri kullanmaktır.
+*/
+
+let isRaining = true;
+isRaining
+? console.log('You need a rain coat.')
+: console.log('No need for a rain coat.')
+isRaining = false;
+
+isRaining
+? console.log('You need a rain coat.')
+: console.log('No need for a rain coat.')
+
+        /* Alert Metodu */
+
+/* Alert metodu ekranda bir pop-up içerisinde bir mesaj ve genellikle tamam butonu yazan bir mesaj bastırır tamama tıklayınca 
+kapanır fln.*/
+
+        /* Window prompt() metodu */
+
+/* prompt() yöntemi tarayıcıda giriş bilgilerini almak için yukarıdaki alerte benzer bir popup şeklinde baloncuğun içinde bilgi
+lerin girildiği bir kutucuk çıkarır. Kullanıcıdan alınan datalar bir değişkende saklanabilir. prompt() yöntemi iki argüman alır
+ikinci argüman isteğe bağlıdır. */
+
+        /* Window confirm() metot */
+
+/* Confirm yöntemi, bir tamam ve iptal düğmesiyle birlikte belirli bir mesaj içeren bir iletişim kutusu görüntüler. Bir onay kutusu
+genellikle bir kullanıcıdan bir şeyi yürütmek için izin istemek için kullanılır. window confirm() arügman olarak bir dize alır. 
+Tamam'a tıklamak true değerini, iptale tıklamak false değerini döndürür. */
 
 
 
+                /* date nesnesi */
+/* JS te geçerli saat tarih javascript date objesi kullanılarak oluşturulur. Date obesini kullanarak oluşturduğumuz nesne, tarih 
+ve saat ile çalışmak için birçok yöntem sunar. Bir tarih nesnesi değerlerinden tarig ve saat bilgisi almak için kullandığımız 
+yöntemler, bilgiyi sağladığı için get kelimesi ile başlamaktadır. getFullYear(), gerMonth(), getDate(), getDay(), getHours(), 
+getMinutes(), getSeconds(), gelMilliSeconds(), getTime(), getDay()*/
+
+/*
+    * getFullYear()    get the year as a four digit number (yyyy)
+    * getMonth()        get the month as a number (0-11)
+    * getDate()         get the day as a number (1-31)
+    * getHours()        get the hour (0-23)
+    * getMinutes()      get the minute (0-59)
+    * getSeconds()      get the second (0-59)
+    * getMilliSecond    get the millisecond (0-999)
+    * getTime()         get the time (milliseconds since January 1, 1970)
+    * getDay()          get the weekdays as a number (0-6)
+*/
 
 
+// Bir date objesi oluşturma
+
+let now = new Date();
+console.log(now);
+
+// bir tam yılı almak 
+
+now = new Date();
+console.log(now.getFullYear()); // görüldüğü gibi çıktı olarak yılı verdi
