@@ -59,6 +59,55 @@ console.log(empty); // çıktı olarak null vericektir ama tanımsız değildir 
     * division = /
     * modulus = %
     * exponential = ** (üs almak)
+    * ++ önüne geldiği değişkenin değerini sadece bir attırır
+    * -- yukarıdaki işlevin negatifi
 */
+
+const PI = 3.14;
+let radius = 100;  // metre cinsinden
+
+// bu bilgiler bize dairenin alanını hesaplamamıza izin verir
+
+const areaOfCircle = PI*radius*radius;
+console.log(areaOfCircle);
+
+
+
+const gravity = 9.81;   // m/s2
+let mass = 72;          //kilogram
+
+//bu bilgileri kullanarak bir nesnenin kütlesini hesaplayabiliriz
+
+const weight = mass * gravity;
+console.log(weight);
+
+
+        /* Kıyaslama Operatörleri */
+
+
+/* Kıyaslama operatörleri programlamada önemli yer tutar ve çok sık kullanırız.
+
+    * == eşit mi operatörü iki eşittir olduğunda iki datanın valueları eşit olduğunda true değerini döndürür
+    * === bu ise mutlak eşitlik anlamına geliyor yani hem value hem de data type olarak eşit olmalı
+    * != eşit değil mi
+    * > büyüktür
+    * < küçüktür
+    * >= büyük eşit
+    * <= küçük eşit
+*/
+
+        /* Mantıksal Operatörler */
+
+/* aşağıdaki semboller mantıksal operatörlerdir ve yine programlamadaki önemi büyüktüt
+
+    * && ve operatörü iki değerinde 1 olması durumunda 1 sonucunu verir
+    * || veya operatörü
+    * ! 
+*/
+
+        /* Koşul Operatörü */
+
+
+
 
 
