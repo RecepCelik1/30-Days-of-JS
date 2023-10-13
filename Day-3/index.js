@@ -167,3 +167,22 @@ console.log(now);
 
 now = new Date();
 console.log(now.getFullYear()); // görüldüğü gibi çıktı olarak yılı verdi
+
+now = new Date();
+console.log(now.getMonth()); // bunu yaptığımızda şu anki aydan bir önceki ayın numarasını vericektir çünkü indexler 0 dan başlar.
+
+now = new Date();
+console.log(now.getDate()); // bu şekilde de ayın kaçıncı gününde olduğumuzu aldık. yine index olayına dikkat tabi ki.
+
+now = new Date();
+console.log(now.getDay()); // bu kodu cuma günü yazdım yabancılarda günler pazardan başlar sayılmaya yani yabancılarda cuma günü 
+// haftanın 6. günü çıktı yani yine index mantığı burada da aynen geçerli yanıltmasın bu durum.
+
+now = new Date();
+console.log(now.getHours()) // saati almak bu bize doğrudan saati vericektir 1 eksiğini değil.
+
+now = new Date();
+console.log(now.getMinutes()) // dakika
+
+now = new Date();
+console.log(now.getSeconds()) // seconds bunlarda index sayımı problem oluşturmuyor.
