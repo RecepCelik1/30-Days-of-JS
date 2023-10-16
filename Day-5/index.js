@@ -39,7 +39,8 @@ const companies = companiesString.split(`,`);
 console.log(companies); // çıktıya dikkat split fonksiyonu virgülü gördüğü zaman ayırıp farklı bir array yapıp devam eder. böylece
                         // diğer çıktılardan önce bir space kalır.
 
-                        
+
 let txt = `I love learning coding. I'm currently learning JS, HTML5, CSS, React`;
 const words = txt.split(' ');
 console.log(words);
+
