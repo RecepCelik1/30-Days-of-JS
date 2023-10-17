@@ -48,21 +48,3 @@ console.log(splice1); //-> ilk elemanı kaldırır
 const num1 = [1,2,3,4,5,6];
 num1.splice(3,3,7,8,9);
 console.log(num1.splice(3,3,7,8,9));
-
-        /* *Push metodu */
-//push : dizinin sonuna eleman ekler.Varolan bir diziye eleman eklemek için push metodunu kullanırız.
-
-const arr = [`item1`,`item2`,`item3`];
-arr.push(`new item`);
-console.log(arr)
-//[`item1`,`item2`,`item3`,`new item`]
-
-
-
-
-
-
-
-
-
-
