@@ -12,3 +12,4 @@ console.log(names.join(''));
 console.log(names.join(' '));       //==> terminaldeki çıktıları inceleyerek daha iyi anlayabiliriz
 console.log(names.join(', '));
 console.log(names.join(' # '));
+
