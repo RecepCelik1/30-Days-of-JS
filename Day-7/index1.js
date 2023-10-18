@@ -78,8 +78,41 @@ function square(n){
     hadi birde arrow versiyonunu görelim
 */
 
-const square = n => {
+const square = n => {  //=> eşittirler arasındaki n parametredir.
     let sum;    
     sum = n*n;              // aynen bu şekilde
     return sum;         
 }
+
+/* // Arrow functionda sınırsız sayıda parametre \\
+
+arrow function, klasik fonksiyon gibi arguments nesnesine sahip değildir. Arrow functionda sınırsız sayıda parametre kullanmak istersek
+spread operatör (...) ve hemen ardından parametre adı kullanılır. Fonksiyonda bağımsız değişken olarak geçtiğimiz her şeye arrow
+functionda dizi olarak erişilebilir. Bir örnek gösterelim
+
+*/
+
+const sumAllNums = (...args) => { // sonsuz sayıda parametre tanımlamak için argument demek yerine parantez içlerinde önce ... nokta 
+    let sum = 0;                  // koyar ve hemen sonrasında bir parametre adı belirleriz o parametre dışarıdan array gibi 
+    for(const element of args);   // davranır.  
+    sum += element;
+    return element;
+}                                 
+console.log(sumAllNumbers(1,2,3,4));
+
+
+/* Default parametre ile fonksiyon kullanımı 
+
+parametrelere defalt değerler atayarak kullanabilirz. Bu durumda fonksiyonu çağırdığımız sırada söz konusu parametreye vermek zorunda
+olmadan kullanabiliriz. Eğer vermezsek fonksiyon işlevini o parametrenin default değerini kullanarak tammalayacaktır.
+
+*/
+
+function greetings(name = `Recep`) {
+    let message = `Dear ${name}, welcome to 30 days of JavaScript!`;
+    return message;
+}
+
+console.log(greetings());
+console.log(greetings(`Samet`));
+
