@@ -29,6 +29,7 @@
 const anonymousFun = function() {
     console.log(
         `i'm anonymous function and my index is stored by anonymous`
+    )
 
     return 0;
 }
