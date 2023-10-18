@@ -78,3 +78,14 @@ function arrayFunction(arr){
 const array1 = [1,2,3,4,5,6,7,8,9];
 
 console.log(arrayFunction(array1));
+
+/* Sınırsız sayıda parametreyle çalışan fonksiyonlar 
+
+# bu benim için yeni bir olay bunu öğrensem iyi olucaktır
+
+    //klasik fonksiyonda sınırsız sayıda parametre
+
+        Bu fonksiyonun tanımlanmasnı fonksiyon scope'nda object temelli arguments anahtar kelimesi ile erişilir. Parametre olarak atanan
+        her ögeye arguments üzerinden ulaşabiliriz. Bir örneğine bakmak gerekirse
+    
+*/
