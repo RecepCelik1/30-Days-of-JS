@@ -34,4 +34,4 @@ function letsLearnScope() {
 
 letsLearnScope()
 
-console.log(a,b)
+console.log(a,b) //==> fonksiyonu çağırsak bile içerisindeki değişkenler çıkmaz dışarıya.

@@ -1,4 +1,5 @@
-                // nesne 
+                
+                // Nesne \\
 
 /* JavaScript dilinde bir nevi C dilindeki struct yapısı gibi bişeydir */
 
