@@ -1,4 +1,4 @@
-    /* for each metoduda callback kullanan metotlardan biridir. */
+    /* forEach metoduda callback kullanan metotlardan biridir. */
 
 const numbers = [1,2,3,4,5]
 const sumArray = (arr) => {
